@@ -12,7 +12,7 @@ import { useTheme } from "@react-navigation/native";
 import { icons } from "../Assets";
 import { addDataCall } from "../Redux/Action/addDataAction";
 import { useDispatch,useSelector } from "react-redux";
-
+import Header from "../Component/Header";
 export default function Order_Screen() {
   const response = useSelector((state) => state?.addDatareducer);
 
@@ -24,9 +24,11 @@ export default function Order_Screen() {
   }
   return (
     <View style={{ flex: 1 }}>
+      
       <View style={{ flex: 0.92 }}>
         <View style={{ flex: 0.6 }}>
           <Image source={require("../Assets/bg.png")} style={styles.bg_img} />
+          <Header style={{position:'absolute', height: (metrics.screenHeight / 100) * 6.5,width:'100%'}} />
         </View>
         <View style={styles.float_label}>
           <Text style={{ color: "#000", fontSize: 18, paddingTop: 12 }}>
