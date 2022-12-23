@@ -4,7 +4,7 @@ import metrics from "../Utils/mertrics";
 import { icons } from "../Assets";
 
 export default function Header(props) {
-  const { style } = props;
+  const { style ,isCart} = props;
   return (
     <View style={[{ flexDirection: "row" }, style]}>
       <View style={{ flex: 0.75, alignItems: "center", flexDirection: "row" }}>
@@ -16,10 +16,12 @@ export default function Header(props) {
             resizeMode: "contain",
             tintColor: "#fff",
             marginLeft: 15,
+            marginRight:15
           }}
         />
+        <Text style={{color:'#fff',fontWeight:'bold',fontSize:18}}>{isCart?'My Cart':''}</Text>
       </View>
-
+      {!isCart &&
       <View
         style={{
           flex: 0.25,
@@ -46,6 +48,7 @@ export default function Header(props) {
           }}
         />
       </View>
+      }
     </View>
   );
 }
