@@ -11,8 +11,8 @@ const Stack = createStackNavigator();
 
 
 const beforeLoggedIn = {
+  Cart_Screen:Cart_Screen,
     Order_Screen:Order_Screen,
-    Cart_Screen:Cart_Screen
    
    
   };
