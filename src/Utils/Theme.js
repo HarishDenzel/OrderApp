@@ -4,7 +4,7 @@ export const Apptheme = {
   colors: {
     ...DefaultTheme.colors,
     whiteText: "#fff",
-    primary: 'rgba(28, 194, 244, 0.25)',
+    primary: '#172430',
     labelTextColor: "#000",
     Dark_blue: '#00ADEA',
     Dark: '#000',
